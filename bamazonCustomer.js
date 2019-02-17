@@ -24,6 +24,14 @@ function afterConnection() {
       if (err) throw err;
       console.log(res);
       connection.end();
-    });
-  }
+    });}
   
+  function runSearch() {
+    inquirer
+    .prompt({
+        name: "action",
+        type: "rawlist",
+        message: "What is the ID of the item you would like to buy?",
+        choices: [
+    "Enter an ID number between 1 and 10",
+     ]})}
